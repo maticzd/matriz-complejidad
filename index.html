@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<!--
+Template Name: NobleUI - HTML Bootstrap 5 Admin Dashboard Template
+Author: NobleUI
+Website: https://www.nobleui.com
+Portfolio: https://themeforest.net/user/nobleui/portfolio
+Contact: nobleui123@gmail.com
+Purchase: https://1.envato.market/nobleui_admin
+License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
+-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Responsive HTML Admin Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="NobleUI">
+	<meta name="keywords" content="nobleui, bootstrap, bootstrap 5, bootstrap5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<title>NobleUI - HTML Bootstrap 5 Admin Dashboard Template</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- End fonts -->
+
+	<!-- core:css -->
+	<link rel="stylesheet" href="assets/vendors/core/core.css">
+	<!-- endinject -->
+
+	<!-- Plugin css for this page -->
+	<!-- End plugin css for this page -->
+
+	<!-- inject:css -->
+	<link rel="stylesheet" href="assets/fonts/feather-font/css/iconfont.css">
+	<link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+	<!-- endinject -->
+
+  <!-- Layout styles -->
+	<link rel="stylesheet" href="assets/css/demo3/style.css">
+  <!-- End layout styles -->
+
+  <link rel="shortcut icon" href="assets/images/favicon.png" />
+
+	<style media="screen">
+		table td:hover {
+			background-color: rgba(0,0,0,.075);
+		}
+		table td.selected {
+			background-color: rgba(205,237,219,1);
+		}
+	</style>
+</head>
+<body>
+	<div class="main-wrapper">
+
+		<!-- partial:../../partials/_navbar.html -->
+		<div class="horizontal-menu">
+			<nav class="navbar top-navbar">
+				<div class="container">
+					<div class="navbar-content">
+						<a href="#" class="navbar-brand">
+							Matriz<span>Complejidad</span>
+						</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- partial -->
+
+		<div class="page-wrapper">
+			<div class="page-content">
+				<div class="row">
+					<div class="col-md-6 grid-margin stretch-card">
+						<div class="card">
+              <div class="card-body">
+								<h6 class="card-title mb-4">Complejidad de negocio</h6>
+								<div class="table-responsive">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th>Atributo del Negocio</th>
+													<th>Zona I <br>Complejidad Baja</th>
+													<th>Zona II <br>Complejidad Media</th>
+													<th>Zona III <br>Complejidad Alta</th>
+												</tr>
+											</thead>
+											<tbody class="bussiness-complexity">
+												<tr class="q1">
+													<th class="align-middle">Cuantos ejecutivos de<br>la organización poseen<br>conocimientos en esa<br>rama del negocio</th>
+													<td class="align-middle" data-value="1">Uno</td>
+													<td class="align-middle" data-value="2">Entre 2 y 3</td>
+													<td class="align-middle" data-value="3">Ninguno<br>Más de 3</td>
+												</tr>
+												<tr class="q2">
+													<th class="align-middle">Definición de Objetivos<br>del negocio</th>
+													<td class="align-middle" data-value="1">Método SMART</td>
+													<td class="align-middle" data-value="2">Método SMART,<br>aplicado no es su<br>totalidad</td>
+													<td class="align-middle" data-value="3">Vagos</td>
+												</tr>
+												<tr class="q3">
+													<th class="align-middle">Procesos de negocio</th>
+													<td class="align-middle" data-value="1">Pocos (1 a 4)</td>
+													<td class="align-middle" data-value="2">5 a 6</td>
+													<td class="align-middle" data-value="3">Muchos, más de 6</td>
+												</tr>
+												<tr class="q4">
+													<th class="align-middle">Políticas del negocio</th>
+													<td class="align-middle" data-value="1">Existentes</td>
+													<td class="align-middle" data-value="2">Vagas</td>
+													<td class="align-middle" data-value="3">Inexistentes</td>
+												</tr>
+												<tr class="q5">
+													<th class="align-middle">Regulaciones del negocio<br>(Superintendencia o SII)</th>
+													<td class="align-middle" data-value="1">Pocas y Simples</td>
+													<td class="align-middle" data-value="2">Pocas y Complejas</td>
+													<td class="align-middle" data-value="3">Muchas y Complejas</td>
+												</tr>
+												<tr class="q6">
+													<th class="align-middle">Personal</th>
+													<td class="align-middle" data-value="1">Experimentado</td>
+													<td class="align-middle" data-value="2">Poca experiencia</td>
+													<td class="align-middle" data-value="3">Sin experiencia</td>
+												</tr>
+												<tr class="q7">
+													<th class="align-middle">Ámbito geográfico del<br>negocio</th>
+													<td class="align-middle" data-value="1">Una Localización</td>
+													<td class="align-middle" data-value="2">Regional</td>
+													<td class="align-middle" data-value="3">Global</td>
+												</tr>
+												<tr class="q8">
+													<th class="align-middle">Reglas internas del<br>negocio</th>
+													<td class="align-middle" data-value="1">Establecidas</td>
+													<td class="align-middle" data-value="2">Vagas</td>
+													<td class="align-middle" data-value="3">Inexistentes</td>
+												</tr>
+											</tbody>
+										</table>
+								</div>
+              </div>
+            </div>
+					</div>
+					<div class="col-md-6 grid-margin stretch-card">
+						<div class="card">
+              <div class="card-body">
+								<h6 class="card-title mb-4">Complejidad tecnológica</h6>
+								<div class="table-responsive">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th>Atributo de la tecnología</th>
+													<th>Zona I <br>Complejidad Baja</th>
+													<th>Zona II <br>Complejidad Media</th>
+													<th>Zona III <br>Complejidad Alta</th>
+												</tr>
+											</thead>
+											<tbody class="technology-complexity">
+												<tr class="q1">
+													<th class="align-middle">Arquitectura tecnológica del<br>proyecto</th>
+													<td class="align-middle" data-value="1">Existente en la<br>empresa</td>
+													<td class="align-middle" data-value="2">Existen, pero no<br>desarrolladas</td>
+													<td class="align-middle" data-value="3">Inexistentes en la empresa</td>
+												</tr>
+												<tr class="q2">
+													<th class="align-middle">Proveedores de tecnología<br>y telecomunicaciones</th>
+													<td class="align-middle" data-value="1">Antiguos, con presencia<br>de más de 4 años en el<br>mercado</td>
+													<td class="align-middle" data-value="2">Antiguos, con presencia<br>de menos de 4 años en el<br>mercado</td>
+													<td class="align-middle" data-value="3">Nuevos</td>
+												</tr>
+												<tr class="q3">
+													<th class="align-middle">Localización de los<br>dispositivos a controlar</th>
+													<td class="align-middle" data-value="1">Una</td>
+													<td class="align-middle" data-value="2">Entre 3 y 4 localizaciones</td>
+													<td class="align-middle" data-value="3">5 o más</td>
+												</tr>
+												<tr class="q4">
+													<th class="align-middle">Personal de áreas<br>tecnológicas</th>
+													<td class="align-middle" data-value="1">Experimentado, más de<br>2 años</td>
+													<td class="align-middle" data-value="2">Menos de 2 años de<br>experiencia</td>
+													<td class="align-middle" data-value="3">Sin experiencia</td>
+												</tr>
+												<tr class="q5">
+													<th class="align-middle">Cantidad de plataformas</th>
+													<td class="align-middle" data-value="1">Pocas (1 a 3)</td>
+													<td class="align-middle" data-value="2">4</td>
+													<td class="align-middle" data-value="3">Muchas (más de 4)</td>
+												</tr>
+												<tr class="q6">
+													<th class="align-middle">Nivel de integración de las<br>distintas plataformas,<br>actualmente</th>
+													<td class="align-middle" data-value="1">Integradas</td>
+													<td class="align-middle" data-value="2">Medianamente integradas</td>
+													<td class="align-middle" data-value="3">Sin integración</td>
+												</tr>
+												<tr class="q7">
+													<th class="align-middle">Plataformas tolerantes a<br>fallas o redundantes</th>
+													<td class="align-middle" data-value="1">Muchas (mayor a 70%)</td>
+													<td class="align-middle" data-value="2">Entre 30% y 69%</td>
+													<td class="align-middle" data-value="3">Menos de 30%</td>
+												</tr>
+												<tr class="q8">
+													<th class="align-middle">Obsolescencia de tecnología</th>
+													<td class="align-middle" data-value="1">Tecnología de no más<br>de 2 años</td>
+													<td class="align-middle" data-value="2">Tecnología entre 3 y 4 años</td>
+													<td class="align-middle" data-value="3">Tecnología de más de 5 años</td>
+												</tr>
+											</tbody>
+										</table>
+								</div>
+              </div>
+            </div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<button id="generate" type="button" class="btn btn-primary btn-lg mb-4 mt-3 float-right">Generar matriz de complejidad</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- partial:../../partials/_footer.html -->
+			<footer class="footer border-top">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between py-3 small">
+          <p class="text-muted mb-1 mb-md-0">Copyright © 2022</p>
+          <!-- <p class="text-muted">Handcrafted With <i class="mb-1 text-primary ms-1 icon-sm" data-feather="heart"></i></p> -->
+        </div>
+			</footer>
+			<!-- partial -->
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Error</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="btn-close"></button>
+			      </div>
+			      <div class="modal-body">
+			        Por favor seleccione una opción para cada una de las preguntas.
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div id="chartModal" class="modal fade bd-example-modal-lg" tabindex="-1" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg">
+			    <div class="modal-content p-5">
+						<figure class="highcharts-figure">
+						    <div id="container"></div>
+						</figure>
+			    </div>
+			  </div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- core:js -->
+	<script src="assets/vendors/core/core.js"></script>
+	<!-- endinject -->
+
+	<!-- Plugin js for this page -->
+	<!-- End plugin js for this page -->
+
+	<!-- inject:js -->
+	<script src="assets/vendors/feather-icons/feather.min.js"></script>
+	<script src="assets/js/template.js"></script>
+	<!-- endinject -->
+
+	<script src="assets/js/highcharts.js"></script>
+	<script src="assets/js/modules/exporting.js"></script>
+	<script src="assets/js/modules/export-data.js"></script>
+	<script src="assets/js/modules/accessibility.js"></script>
+
+	<!-- Custom js for this page -->
+	<!-- End custom js for this page -->
+
+	<script type="text/javascript">
+		var bussiness_complexity_total = 0;
+		var technology_complexity_total = 0;
+
+		$('.bussiness-complexity td').click(function() {
+			var question = $(this).closest('tr').attr("class")
+			$('.bussiness-complexity .'+question+' td').removeClass('selected');
+			$(this).toggleClass('selected');
+		});
+
+		$('.technology-complexity td').click(function() {
+			var question = $(this).closest('tr').attr("class")
+			$('.technology-complexity .'+question+' td').removeClass('selected');
+			$(this).toggleClass('selected');
+		});
+
+		$('#generate').click(function() {
+			bussiness_complexity_total = 0
+			technology_complexity_total = 0
+
+			$('.bussiness-complexity .selected').each(function(i, obj) {
+				bussiness_complexity_total = bussiness_complexity_total + parseInt($(this).attr('data-value'))
+			});
+
+			$('.technology-complexity .selected').each(function(i, obj) {
+				technology_complexity_total = technology_complexity_total + parseInt($(this).attr('data-value'))
+			});
+
+			console.log(bussiness_complexity_total)
+			console.log(technology_complexity_total)
+
+			if ( bussiness_complexity_total < 8 || technology_complexity_total < 8 ) {
+				$('#exampleModal').modal('show')
+			} else {
+				chart.series[0].setData([[bussiness_complexity_total,technology_complexity_total]])
+				$('#chartModal').modal('show')
+			}
+
+
+		});
+
+		var chart = Highcharts.chart('container', {
+				chart: {
+						type: 'scatter',
+						zoomType: 'xy',
+						marginTop: 55,
+						plotBackgroundImage: 'https://i.imgur.com/HiVPXq6.png'
+				},
+				title: {
+						text: 'Matriz de Complejidad'
+				},
+				exporting: {
+					enabled: false
+				},
+				credits: {
+					enabled: false
+				},
+				// subtitle: {
+				//     text: 'Source: Heinz  2003'
+				// },
+				tooltip: {
+					shared: true,
+					crosshairs: false,
+					formatter: function() {
+							if (this.point.x < 12) {
+								if (this.point.y < 12) {
+									return '<b>Complejidad Baja</b><br>('+this.point.x+','+this.point.y+')';
+								} else if (this.point.y >= 12 && this.point.y < 20) {
+									return '<b>Complejidad Media</b><br>('+this.point.x+','+this.point.y+')';
+								} else {
+									return '<b>Complejidad Alta</b><br>('+this.point.x+','+this.point.y+')';
+								}
+							} else if (this.point.x >= 12 && this.point.x < 20) {
+								if (this.point.y < 12) {
+									return '<b>Complejidad Media</b><br>('+this.point.x+','+this.point.y+')';
+								} else if (this.point.y >= 12 && this.point.y < 20) {
+									return '<b>Complejidad Media</b><br>('+this.point.x+','+this.point.y+')';
+								} else {
+									return '<b>Complejidad Alta</b><br>('+this.point.x+','+this.point.y+')';
+								}
+							} else {
+								return '<b>Complejidad Alta</b><br>('+this.point.x+','+this.point.y+')';
+							}
+					}
+				},
+				xAxis: {
+						title: {
+								enabled: true,
+								text: 'Complejidad de Negocio'
+						},
+						min: 8,
+						max:24,
+						tickInterval:2
+						// startOnTick: true,
+						// endOnTick: true,
+						// showLastLabel: true
+				},
+				yAxis: {
+						title: {
+								text: 'Complejidad Tecnológica'
+						},
+						min: 8,
+						max:24,
+						tickInterval:2
+				},
+				legend: {
+						enabled: false,
+						layout: 'vertical',
+						align: 'left',
+						verticalAlign: 'top',
+						x: 100,
+						y: 70,
+						floating: true,
+						backgroundColor: Highcharts.defaultOptions.chart.backgroundColor,
+						borderWidth: 1
+				},
+				plotOptions: {
+						scatter: {
+								marker: {
+										radius: 10,
+										states: {
+												hover: {
+														enabled: true,
+														lineColor: 'rgb(100,100,100)'
+												}
+										}
+								},
+								states: {
+										hover: {
+												marker: {
+														enabled: false
+												}
+										}
+								},
+								tooltip: {
+										headerFormat: '<b>{series.name}</b> {point.y}<br>',
+										pointFormat: '({point.x}, {point.y})',
+
+								}
+						}
+				},
+				series: [{
+						name: 'Complejidad',
+						color: 'blue',
+						data: [[18,23]]
+
+				}]
+		});
+
+
+	</script>
+
+</body>
+</html>
