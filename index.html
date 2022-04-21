@@ -267,6 +267,7 @@ License: For each use you must have a valid license purchased only from above li
 	<script type="text/javascript">
 		var bussiness_complexity_total = 0;
 		var technology_complexity_total = 0;
+		var marker_color = ''
 
 		$('.bussiness-complexity td').click(function() {
 			var question = $(this).closest('tr').attr("class")
@@ -313,14 +314,34 @@ License: For each use you must have a valid license purchased only from above li
 				  title: 'Error!',
 				  text: 'Por favor seleccione una opción para cada uno de los atributos.',
 				  icon: 'error',
-				  confirmButtonText: 'Cool'
+				  confirmButtonText: 'OK'
 				})
 			} else {
-				chart.series[0].setData([[bussiness_complexity_total,technology_complexity_total]])
+				if (bussiness_complexity_total < 12) {
+					if (technology_complexity_total < 12) {
+						marker_color = '#048a3f'
+					} else if (technology_complexity_total >= 12 && technology_complexity_total < 20) {
+						marker_color = '#e4aa04'
+					} else {
+						marker_color = '#ff1a53'
+					}
+				} else if (bussiness_complexity_total >= 12 && bussiness_complexity_total < 20) {
+					if (technology_complexity_total < 12) {
+						marker_color = '#e4aa04'
+					} else if (technology_complexity_total >= 12 && technology_complexity_total < 20) {
+						marker_color = '#e4aa04'
+					} else {
+						marker_color = '#ff1a53'
+					}
+				} else {
+					marker_color = '#ff1a53'
+				}
+				chart.series[0].update({
+			  	color: marker_color,
+					data: [[bussiness_complexity_total,technology_complexity_total]]
+			  })
 				$('#chartModal').modal('show')
 			}
-
-
 		});
 
 		var chart = Highcharts.chart('container', {
@@ -328,7 +349,7 @@ License: For each use you must have a valid license purchased only from above li
 						type: 'scatter',
 						zoomType: 'xy',
 						marginTop: 55,
-						plotBackgroundImage: 'https://i.imgur.com/HiVPXq6.png'
+						plotBackgroundImage: 'https://i.imgur.com/5R8zGbZ.png'
 				},
 				title: {
 						text: 'Matriz de Complejidad'
@@ -344,7 +365,7 @@ License: For each use you must have a valid license purchased only from above li
 				// },
 				tooltip: {
 					shared: true,
-					crosshairs: false,
+					crosshairs: true,
 					formatter: function() {
 							if (this.point.x < 12) {
 								if (this.point.y < 12) {
