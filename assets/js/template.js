@@ -7,7 +7,7 @@
     var footer = $('footer');
     var sidebar = $('.sidebar');
     var navbar = $('.navbar').not('.top-navbar');
-    
+
 
     // Enable feather-icons with SVG markup
     feather.replace();
@@ -45,7 +45,7 @@
     })
 
 
-    // Applying perfect-scrollbar 
+    // Applying perfect-scrollbar
     if ($('.sidebar .sidebar-body').length) {
       const sidebarBodyScroll = new PerfectScrollbar('.sidebar-body');
     }
@@ -149,7 +149,7 @@
     });
 
 
-    // close sidebar when click outside on mobile/table    
+    // close sidebar when click outside on mobile/table
     $(document).on('click touchstart', function(e){
       e.stopPropagation();
 
@@ -178,19 +178,19 @@
           navItemClicked.removeClass('show-submenu');
         }
         $(this).toggleClass('show-submenu');
-      }        
+      }
     })
 
-    $(window).scroll(function() {
-      if(window.matchMedia('(min-width: 992px)').matches) {
-        var header = $('.horizontal-menu');
-        if ($(window).scrollTop() >= 60) {
-          $(header).addClass('fixed-on-scroll');
-        } else {
-          $(header).removeClass('fixed-on-scroll');
-        }
-      }
-    });
+    // $(window).scroll(function() {
+    //   if(window.matchMedia('(min-width: 992px)').matches) {
+    //     var header = $('.horizontal-menu');
+    //     if ($(window).scrollTop() >= 60) {
+    //       $(header).addClass('fixed-on-scroll');
+    //     } else {
+    //       $(header).removeClass('fixed-on-scroll');
+    //     }
+    //   }
+    // });
 
 
     // Prevent body scrolling while sidebar scroll
@@ -199,7 +199,7 @@
     }, function () {
       $('body').removeClass('overflow-hidden');
     });
-   
+
 
   });
 })(jQuery);
