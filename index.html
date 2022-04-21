@@ -288,14 +288,22 @@ License: For each use you must have a valid license purchased only from above li
 
 		$('.bussiness-complexity td').click(function() {
 			var question = $(this).closest('tr').attr("class")
-			$('.bussiness-complexity .'+question+' td').removeClass('selected');
-			$(this).toggleClass('selected');
+			if ( $(this).hasClass('selected') ) {
+				$(this).removeClass('selected');
+			} else {
+				$('.bussiness-complexity .'+question+' td').removeClass('selected');
+				$(this).toggleClass('selected');
+			}
 		});
 
 		$('.technology-complexity td').click(function() {
 			var question = $(this).closest('tr').attr("class")
-			$('.technology-complexity .'+question+' td').removeClass('selected');
-			$(this).toggleClass('selected');
+			if ( $(this).hasClass('selected') ) {
+				$(this).removeClass('selected');
+			} else {
+				$('.technology-complexity .'+question+' td').removeClass('selected');
+				$(this).toggleClass('selected');
+			}
 		});
 
 		$('#generate').click(function() {
