@@ -45,7 +45,7 @@ License: For each use you must have a valid license purchased only from above li
 
 	<style media="screen">
 		table td {
-			cursor: pointer; 
+			cursor: pointer;
 		}
 		table td:hover {
 			background-color: rgba(0,0,0,.075);
@@ -239,7 +239,7 @@ License: For each use you must have a valid license purchased only from above li
 			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="btn-close"></button>
 			      </div>
 			      <div class="modal-body">
-			        Por favor seleccione una opción para cada una de las preguntas.
+			        Por favor seleccione una opción para cada uno de los atributos de cada tabla.
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -302,18 +302,23 @@ License: For each use you must have a valid license purchased only from above li
 			bussiness_complexity_total = 0
 			technology_complexity_total = 0
 
+			var bussiness_complexity_count = 0
+			var technology_complexity_count = 0
+
 			$('.bussiness-complexity .selected').each(function(i, obj) {
+				bussiness_complexity_count += 1
 				bussiness_complexity_total = bussiness_complexity_total + parseInt($(this).attr('data-value'))
 			});
 
 			$('.technology-complexity .selected').each(function(i, obj) {
+				technology_complexity_count += 1
 				technology_complexity_total = technology_complexity_total + parseInt($(this).attr('data-value'))
 			});
 
 			console.log(bussiness_complexity_total)
 			console.log(technology_complexity_total)
 
-			if ( bussiness_complexity_total < 8 || technology_complexity_total < 8 ) {
+			if ( bussiness_complexity_count < 8 || technology_complexity_count < 8 ) {
 				$('#exampleModal').modal('show')
 			} else {
 				chart.series[0].setData([[bussiness_complexity_total,technology_complexity_total]])
